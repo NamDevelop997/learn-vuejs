@@ -1,15 +1,22 @@
-<template lang="">
-    <div>
-        <h2>User</h2>
-    </div>
+<template>
+  <div>
+    <ul>
+      <li style="list-style: none;">
+        <p>{{ user.id }} - {{ user.email }}</p></li>
+    </ul>
+  </div>
 </template>
-<script >
+<script>
 export default {
-    data() {
-        return {};
-    }
-}
+  data() {
+    return {};
+  },
+  props: {
+    user: {
+      type: Object,
+      default: {},
+    },
+  },
+};
 </script>
-<style lang="">
-    
-</style>
+<style></style>
